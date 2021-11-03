@@ -1,6 +1,6 @@
-# go-clean-arch-sample
+# go-clean-arch-example
 
-this is an simple exmaple of implemention Clean Archtecture in Go using **gin** and **sqlboiler**.
+this is a simple exmaple of implemention Clean Archtecture in Go using **gin** and **sqlboiler**.
 
 # testing
 

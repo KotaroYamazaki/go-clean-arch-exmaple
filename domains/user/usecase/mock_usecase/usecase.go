@@ -8,7 +8,7 @@ import (
 	context "context"
 	reflect "reflect"
 
-	user "github.com/KotaroYamazaki/go-clean-arch-sample/domains/user"
+	user "github.com/KotaroYamazaki/go-clean-arch-example/domains/user"
 	gomock "github.com/golang/mock/gomock"
 )
 

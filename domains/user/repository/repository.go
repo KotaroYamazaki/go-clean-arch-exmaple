@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/KotaroYamazaki/go-clean-arch-sample/models"
+	"github.com/KotaroYamazaki/go-clean-arch-example/models"
 	"github.com/volatiletech/sqlboiler/v4/boil"
 )
 

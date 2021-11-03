@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/KotaroYamazaki/go-clean-arch-sample/domains/user"
-	"github.com/KotaroYamazaki/go-clean-arch-sample/domains/user/repository"
-	"github.com/KotaroYamazaki/go-clean-arch-sample/domains/user/repository/mock_repository"
-	"github.com/KotaroYamazaki/go-clean-arch-sample/models"
+	"github.com/KotaroYamazaki/go-clean-arch-example/domains/user"
+	"github.com/KotaroYamazaki/go-clean-arch-example/domains/user/repository"
+	"github.com/KotaroYamazaki/go-clean-arch-example/domains/user/repository/mock_repository"
+	"github.com/KotaroYamazaki/go-clean-arch-example/models"
 
 	"github.com/golang/mock/gomock"
 )

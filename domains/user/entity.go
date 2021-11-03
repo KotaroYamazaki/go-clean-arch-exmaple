@@ -1,7 +1,7 @@
 package user
 
 import (
-	"github.com/KotaroYamazaki/go-clean-arch-sample/models"
+	"github.com/KotaroYamazaki/go-clean-arch-example/models"
 )
 
 type User struct {
