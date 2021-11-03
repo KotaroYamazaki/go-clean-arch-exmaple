@@ -3,10 +3,10 @@ package app
 import (
 	"log"
 
-	"github.com/KotaroYamazaki/go-cleanarchtecture/domains/user/handler"
-	"github.com/KotaroYamazaki/go-cleanarchtecture/domains/user/repository"
-	"github.com/KotaroYamazaki/go-cleanarchtecture/domains/user/usecase"
-	"github.com/KotaroYamazaki/go-cleanarchtecture/infra"
+	"github.com/KotaroYamazaki/go-clean-arch-sample/domains/user/handler"
+	"github.com/KotaroYamazaki/go-clean-arch-sample/domains/user/repository"
+	"github.com/KotaroYamazaki/go-clean-arch-sample/domains/user/usecase"
+	"github.com/KotaroYamazaki/go-clean-arch-sample/infra"
 	"github.com/gin-gonic/gin"
 )
 

@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/KotaroYamazaki/go-cleanarchtecture/cmd/app"
+	"github.com/KotaroYamazaki/go-clean-arch-sample/cmd/app"
 	"github.com/joho/godotenv"
 )
 

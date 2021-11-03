@@ -3,9 +3,9 @@ package usecase
 import (
 	"context"
 
-	"github.com/KotaroYamazaki/go-cleanarchtecture/domains/user"
-	"github.com/KotaroYamazaki/go-cleanarchtecture/domains/user/repository"
-	"github.com/KotaroYamazaki/go-cleanarchtecture/models"
+	"github.com/KotaroYamazaki/go-clean-arch-sample/domains/user"
+	"github.com/KotaroYamazaki/go-clean-arch-sample/domains/user/repository"
+	"github.com/KotaroYamazaki/go-clean-arch-sample/models"
 )
 
 type Usecase interface {

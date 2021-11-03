@@ -1,4 +1,4 @@
-module github.com/KotaroYamazaki/go-cleanarchtecture
+module github.com/KotaroYamazaki/go-clean-arch-sample
 
 go 1.16
 
