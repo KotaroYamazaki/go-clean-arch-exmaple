@@ -3,6 +3,7 @@ module github.com/KotaroYamazaki/go-clean-arch-example
 go 1.16
 
 require (
+	github.com/DATA-DOG/go-sqlmock v1.4.1
 	github.com/friendsofgo/errors v0.9.2
 	github.com/gin-gonic/gin v1.7.4
 	github.com/go-sql-driver/mysql v1.5.0

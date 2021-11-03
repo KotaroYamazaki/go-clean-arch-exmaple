@@ -26,8 +26,8 @@ func New(
 	}
 }
 
-func (r *repository) Get(ctx context.Context, id int) (*models.User, error) {
-	return models.FindUser(ctx, r.db, id)
+func (repo *repository) Get(ctx context.Context, id int) (*models.User, error) {
+	return models.FindUser(ctx, repo.db, id)
 }
 
 func (repo *repository) Store(ctx context.Context, user *models.User) error {
