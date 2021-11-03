@@ -60,7 +60,10 @@ func TestHandler_Get(t *testing.T) {
 	ctrl := gomock.NewController(t)
 	defer ctrl.Finish()
 
-	param := gin.Param{"id", "1"}
+	param := gin.Param{
+		Key:   "id",
+		Value: "1",
+	}
 	params := gin.Params{param}
 
 	w := httptest.NewRecorder()
