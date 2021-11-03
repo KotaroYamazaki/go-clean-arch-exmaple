@@ -13,7 +13,7 @@ require (
 	github.com/swaggo/files v0.0.0-20210815190702-a29dd2bc99b2
 	github.com/swaggo/gin-swagger v1.3.2
 	github.com/swaggo/swag v1.7.4
-	github.com/swaggo/swag/example/celler v0.0.0-20211026170945-1780cd2cd2df
+	github.com/ugorji/go v1.1.13 // indirect
 	github.com/volatiletech/sqlboiler/v4 v4.7.1
 	github.com/volatiletech/strmangle v0.0.1
 )
