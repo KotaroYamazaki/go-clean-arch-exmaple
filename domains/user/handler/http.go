@@ -18,6 +18,19 @@ func New(uc usecase.Usecase) *Handler {
 	return &Handler{uc: uc}
 }
 
+// Get godoc
+// @Summary Get a user
+// @Description get user by ID
+// @ID get-user-by-id
+// @Accept  json
+// @Produce  json
+// @Param id path int true "User ID"
+// @Success 200 {object} user.User
+// @Header 200 {string} Token "qwerty"
+// @Failure 400,404 {object} int
+// @Failure 500 {object} int
+// @Failure default {object} int
+// @Router /users/{id} [get]
 func (h *Handler) Get(c *gin.Context) {
 	id, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
@@ -32,6 +45,19 @@ func (h *Handler) Get(c *gin.Context) {
 	c.JSON(http.StatusOK, res)
 }
 
+// SIgnup godoc
+// @Summary Signup
+// @Description signup
+// @ID singup
+// @Accept  json
+// @Produce  json
+// @Param id path int true "User ID"
+// @Success 200 {object} user.User
+// @Header 200 {string} Token "qwerty"
+// @Failure 400,404 {object} int
+// @Failure 500 {object} int
+// @Failure default {object} int
+// @Router /signup [post]
 func (h *Handler) Signup(c *gin.Context) {
 	params := &user.SignupParams{}
 	if err := c.BindJSON(&params); err != nil {

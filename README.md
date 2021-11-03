@@ -15,3 +15,8 @@ go test ./... -v
 - [mysql](https://github.com/go-sql-driver/mysql) - Go MySQL Driver
 - [gomock](https://github.com/golang/mock) - Mocking framework
 - [testify](https://github.com/stretchr/testify) - Testing toolkit
+- [swag](https://github.com/swaggo/swag) - Go Swagger UI
+
+### SWAGGER UI:
+
+https://localhost:8080/swagger/index.html
