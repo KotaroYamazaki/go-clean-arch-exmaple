@@ -1,10 +1,16 @@
 # go-clean-arch-sample
 
-this is an exmaple of implemention Clean Archtecture in Go using **gin** and **sqlboiler**.
+this is an simple exmaple of implemention Clean Archtecture in Go using **gin** and **sqlboiler**.
 
-### Full list has been used:
+# testing
 
-- [gin] - Web framework
+```
+go test ./... -v
+```
+
+# Full list has been used:
+
+- [gin](https://github.com/gin-gonic/gin) - Web framework
 - [sqlboiler](https://github.com/volatiletech/sqlboiler) - Go ORM
 - [mysql](https://github.com/go-sql-driver/mysql) - Go MySQL Driver
 - [gomock](https://github.com/golang/mock) - Mocking framework
