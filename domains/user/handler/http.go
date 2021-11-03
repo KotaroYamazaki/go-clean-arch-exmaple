@@ -1,6 +1,7 @@
 package handler
 
 import (
+	"log"
 	"net/http"
 	"strconv"
 
@@ -34,17 +35,19 @@ func (h *Handler) Get(c *gin.Context) {
 func (h *Handler) Signup(c *gin.Context) {
 	params := &user.SignupParams{}
 	if err := c.BindJSON(&params); err != nil {
+		log.Println(err)
 		c.JSON(http.StatusBadRequest, err)
 		return
 	}
 
 	if err := params.Validate(); err != nil {
+		log.Println(err)
 		c.JSON(http.StatusBadRequest, err)
 		return
 	}
 
 	if err := h.uc.Signup(c, params); err != nil {
-		c.JSON(http.StatusBadRequest, err)
+		c.JSON(http.StatusInternalServerError, err)
 		return
 	}
 	c.JSON(http.StatusOK, nil)

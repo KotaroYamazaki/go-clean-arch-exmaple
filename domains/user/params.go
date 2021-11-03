@@ -5,7 +5,7 @@ import (
 )
 
 type SignupParams struct {
-	FirebaseUID string     `json:"-"`
+	FirebaseUID string     `json:"firebase_uid"`
 	Name        string     `json:"name" binding:"required"`
 	Birthday    *time.Time `json:"birthday" binding:"required"`
 }

@@ -2,10 +2,12 @@ package usecase
 
 import (
 	"context"
+	"log"
 
 	"github.com/KotaroYamazaki/go-clean-arch-sample/domains/user"
 	"github.com/KotaroYamazaki/go-clean-arch-sample/domains/user/repository"
 	"github.com/KotaroYamazaki/go-clean-arch-sample/models"
+	"github.com/KotaroYamazaki/go-clean-arch-sample/utils"
 )
 
 type Usecase interface {
@@ -26,11 +28,12 @@ func New(repo repository.Repository) Usecase {
 func (uc *usecase) Get(ctx context.Context, id int) (*user.User, error) {
 	u, err := uc.repo.Get(ctx, id)
 	if err != nil {
+		log.Println(err)
 		return nil, err
 	}
 	return &user.User{
 		User: u,
-		Age:  18,
+		Age:  utils.GetAge(u.Birthday),
 	}, nil
 }
 
@@ -40,5 +43,9 @@ func (uc *usecase) Signup(ctx context.Context, params *user.SignupParams) error 
 		Name:        params.Name,
 		Birthday:    *params.Birthday,
 	}
-	return uc.repo.Store(ctx, u)
+	if err := uc.repo.Store(ctx, u); err != nil {
+		log.Println(err)
+		return err
+	}
+	return nil
 }

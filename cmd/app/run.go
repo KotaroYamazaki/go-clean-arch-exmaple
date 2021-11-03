@@ -24,7 +24,7 @@ func Run() {
 	},
 	)
 	r.GET("/users/:id", userH.Get)
-	r.POST("/users/singup", userH.Signup)
+	r.POST("/singup", userH.Signup)
 
 	err := r.Run(":8080")
 	if err != nil {
