@@ -1,6 +1,6 @@
 # go-clean-arch-example
 
-this is a simple exmaple of implemention Clean Archtecture in Go using **gin** and **sqlboiler**.
+a simple exmaple of implemention Clean Archtecture in Go using **gin** and **sqlboiler**.
 
 # testing
 
@@ -19,4 +19,5 @@ go test ./... -v
 
 ### SWAGGER UI:
 
+`go run main.go` and access bellow
 https://localhost:8080/swagger/index.html
